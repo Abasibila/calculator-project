@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calculator">
+    <p class="title">CALCULATOR</p>
+    <p>
+      <button onclick="upDateCalculation('1')">1</button>
+    <button onclick="upDateCalculation('2')">2</button>
+    </p>
+    <p>
+      <button onclick="upDateCalculation('3')">3</button>
+      <button onclick="upDateCalculation('4')">4</button>
+    </p>
+    <p>
+      <button onclick="upDateCalculation('5')">5</button>
+      <button onclick="upDateCalculation('6')">6</button>
+    </p>
+    <p>
+      <button onclick="upDateCalculation('7')">7</button>
+      <button onclick="upDateCalculation('8')">8</button>
+    </p>
+    <p> <button onclick="upDateCalculation('9')">9</button>
+      <button onclick="upDateCalculation('0')">0</button>
+      </p>
+      <p>
+        <button class="operator" onclick=" 
+         calculation += ' + ';
+        ">+</button>
+        <button class="operator" onclick=" 
+         calculation += ' - ';
+        ">-</button>
+        <button class="operator" onclick=" 
+         calculation += ' * ';
+        ">*</button>
+        <button class="operator" onclick=" 
+         calculation += ' / ';
+        ">/</button>
+        <button class="operator" onclick="clear()">Clear</button>
+        <button class="operator" onclick="result()">=</button>
+      </p>
+     
+  </div>
+ <div class="calc-result">
+  <p class="calc"></p>
+  <p class="result"></p>
+ </div>
+    <script src="script.js"></script>
+</body>
+</html>
